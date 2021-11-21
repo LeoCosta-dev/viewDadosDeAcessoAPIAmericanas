@@ -119,7 +119,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20%;
+    height: max-content;
     width: 100%;
     background-color: rgb(245, 4, 4);
     color: rgb(255, 255, 255);
