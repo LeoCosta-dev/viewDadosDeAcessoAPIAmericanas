@@ -16,6 +16,7 @@ h1{
     color: rgb(255, 255, 255);
     margin: 2%;
 }
+
 .pesquisa-header{
     display: none;
     justify-content: center;
@@ -115,6 +116,7 @@ h2{
 }
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20%;
@@ -122,6 +124,19 @@ footer{
     background-color: rgb(245, 4, 4);
     color: rgb(255, 255, 255);
     text-align: center;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: max-content;
+    
+}
+img{
+    width: 30px;
+    filter: invert(90%);
+    margin: 10px;
 }
 @media only screen and (max-width: 780px){
     #cards{
