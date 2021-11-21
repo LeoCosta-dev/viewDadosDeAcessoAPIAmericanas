@@ -1,2 +1,3 @@
-botaoBusca[1].addEventListener("click", campoDeBuscaSection)
-botaoBusca[0].addEventListener("click", campoDeBuscaHeader)
+botaoBusca[1].addEventListener("click", campoDeBuscaSection);
+botaoBusca[0].addEventListener("click", campoDeBuscaHeader);
+titulo.addEventListener("click", telaInicial);

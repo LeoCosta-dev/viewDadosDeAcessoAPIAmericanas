@@ -22,42 +22,49 @@ h1{
     height: 100%;
     width: 40%;
 }
-#pesquisar-header{
-    width: 90%;
-    border-radius: 5px;
-    border: none;
-    height: 30%;
-    text-align: center;
-}
 section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 100%;
+    min-height: 65% ;
+    height: max-content;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 .pesquisa-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 40%;
     width: 40%;
 }
-#pesquisar-section {
-    width: 90%;
-    border-radius: 5px;
-    border: none;
-    height: 30%;
-    text-align: center;
-}
+
 h2{
     color: rgb(255, 255, 255);
     text-align: center;
 }
+#buscar-header, #buscar-section{
+    background-color: rgb(253, 252, 252);
+    color: rgb(255, 6, 6);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+
+}
+.buscar{
+    background-color: rgb(253, 252, 252);
+    color: rgb(255, 6, 6);
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+}
 #cards{
-    display: grid;
+    display: none;
     height: 90%;
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
@@ -105,25 +112,39 @@ h2{
     text-align: center;
     justify-content: space-around;
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(245, 4, 4);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
 @media only screen and (max-width: 780px){
     #cards{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2, 1fr);
         margin: 4px;
         }
-}
-@media only screen and (max-width: 550px) {
     .pesquisa-section{
-        height: 25%;
+        height: 50%;
         width: 80%;
+    }
+    .pesquisa-header{
+        flex-direction: column;
+        width: 100%;
     }
     header{
         flex-direction: column;
-        height: 20%;
+        height: 30%;
     }
+}
+@media only screen and (max-width: 550px) {
     #cards{
-    display: flex;
-    flex-direction: column;
+    display: none;
+    grid-template-columns: repeat(1, 1fr);
     margin: 4px;
     }
 }

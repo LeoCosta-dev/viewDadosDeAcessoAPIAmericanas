@@ -4,15 +4,55 @@ const pesquisaSection = document.getElementById("pesquisa-section");
 const buscarSection = document.getElementById("buscar-section")
 const botaoBusca = document.getElementsByClassName("buscar");
 const cards = document.getElementById("cards");
+const titulo = document.getElementById("titulo");
 
 function campoDeBuscaSection(){
-    pesquisaHeader.style.display = "flex";
-    pesquisaSection.style.display = "none";
-    busca(buscarSection.value)
+    console.log(buscarSection.value)
+    if(buscarSection.value){
+        pesquisaHeader.style.display = "flex";
+        pesquisaSection.style.display = "none";
+        cards.style.display = "grid"
+        busca(buscarSection.value)
+        buscarSection.value = ''
+    } else {
+        let mensagem = document.createElement('p')
+        mensagem.textContent = 'Você não pode fazer uma pesquisa vazia!'
+        mensagem.setAttribute('id', 'naoconfirma')
+        mensagem.style.color = 'red'
+        if (!document.getElementById('naoconfirma')) {
+            pesquisaSection.appendChild(mensagem)
+            setTimeout(() => {
+                mensagem.remove()
+            }, 3000)
+        }
+        buscarSection.value = ''
+    }
 }
 
 function campoDeBuscaHeader(){
-    busca(buscarHeader.value)
+    if(buscarHeader.value){
+        busca(buscarHeader.value)
+        buscarHeader.value = ''
+    } else {
+        let mensagem = document.createElement('p')
+        mensagem.textContent = 'Você não pode fazer uma pesquisa vazia!'
+        mensagem.setAttribute('id', 'naoconfirma')
+        mensagem.style.color = 'yellow'
+        if (!document.getElementById('naoconfirma')) {
+            pesquisaHeader.appendChild(mensagem)
+            setTimeout(() => {
+                mensagem.remove()
+            }, 3000)
+            buscarHeader.value = ''
+        }
+    }
+}
+
+function telaInicial(){
+    pesquisaHeader.style.display = "none";
+    pesquisaSection.style.display = "flex";
+    cards.style.display = "none"
+    buscarSection.value = ''
 }
 
 function insereCards(arr){
