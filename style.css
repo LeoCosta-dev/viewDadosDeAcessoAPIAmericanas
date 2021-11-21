@@ -56,6 +56,53 @@ h2{
     color: rgb(255, 255, 255);
     text-align: center;
 }
+#cards{
+    display: grid;
+    height: 50%;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.card-produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.nome{
+    display: flex;
+    height: max-content;
+    width: 90%;
+    justify-content: space-around;
+} 
+.id, .tipo{
+    display: flex;
+    height: 10%;
+    width: 90%;
+    justify-content: space-around;
+}
+.meta{
+    display: flex;
+    height: 30%;
+    width: 90%;
+    border: solid black 2px;
+    border-radius: 8px;
+}
+.pontos, .visitas{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
 @media only screen and (max-width: 600px) {
     .pesquisa-section{
         height: 25%;
@@ -64,5 +111,14 @@ h2{
     header{
         flex-direction: column;
         height: 20%;
+    }
+    #cards{
+        grid-template-areas: 
+    "item"
+    "item"
+    "item"
+    "item"
+    "item"
+    "item";
     }
 }
