@@ -58,7 +58,7 @@ h2{
 }
 #cards{
     display: grid;
-    height: 50%;
+    height: 90%;
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -91,19 +91,28 @@ h2{
 }
 .meta{
     display: flex;
-    height: 30%;
+    flex-direction: column;
+    height: 25%;
     width: 90%;
+    margin: 10px;
     border: solid black 2px;
     border-radius: 8px;
 }
 .pontos, .visitas{
     display: flex;
-    flex-direction: column;
     height: 30%;
     width: 100%;
     text-align: center;
+    justify-content: space-around;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px){
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4px;
+        }
+}
+@media only screen and (max-width: 550px) {
     .pesquisa-section{
         height: 25%;
         width: 80%;
@@ -113,12 +122,8 @@ h2{
         height: 20%;
     }
     #cards{
-        grid-template-areas: 
-    "item"
-    "item"
-    "item"
-    "item"
-    "item"
-    "item";
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
     }
 }
