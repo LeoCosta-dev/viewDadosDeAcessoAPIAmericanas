@@ -2,6 +2,7 @@ body{
     height: 100vh;
     background-color: rgb(48, 45, 45);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 header{
     display: flex;
