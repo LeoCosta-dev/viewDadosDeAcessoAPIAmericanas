@@ -7,6 +7,7 @@ const cards = document.getElementById("cards");
 const titulo = document.getElementById("titulo");
 
 function campoDeBuscaSection(){
+    event.preventDefault();
     if(buscarSection.value){
         pesquisaHeader.style.display = "flex";
         pesquisaSection.style.display = "none";
@@ -29,6 +30,7 @@ function campoDeBuscaSection(){
 }
 
 function campoDeBuscaHeader(){
+    event.preventDefault();
     if(buscarHeader.value){
         busca(buscarHeader.value)
         buscarHeader.value = ''
