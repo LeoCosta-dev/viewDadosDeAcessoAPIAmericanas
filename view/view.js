@@ -7,7 +7,6 @@ const cards = document.getElementById("cards");
 const titulo = document.getElementById("titulo");
 
 function campoDeBuscaSection(){
-    console.log(buscarSection.value)
     if(buscarSection.value){
         pesquisaHeader.style.display = "flex";
         pesquisaSection.style.display = "none";
