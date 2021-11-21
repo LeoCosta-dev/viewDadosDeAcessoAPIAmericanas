@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
     <script src="models/model.js" defer></script>
     <script src="view/view.js" defer></script>
     <script src="controllers/controller.js" defer></script>
@@ -18,32 +16,37 @@
 </head>
 
 <body>
-    <header>
-        <h1 id = "titulo"> Marketplace Analysis </h1>
-        <form class="pesquisa-header" id="pesquisa-header">
-            <input type="text" name="pesquisar" id="buscar-header" placeholder="Buscar">
-            <button class="buscar" type="submit">Buscar</button>
-        </form>
-    </header>
-    <section>
-        <form class="pesquisa-section" id="pesquisa-section">
-            <h2>Encontre o que você precisar!</h2>
-            <input type="text" name="pesquisar" id="buscar-section" placeholder="Buscar">
-            <button class="buscar" type="submit">Buscar</button>
-        </form>
-        <div id="cards">
+    <div class="container">
+        <header>
+            <h1 id="titulo"> Marketplace Analysis </h1>
+            <form class="pesquisa-header" id="pesquisa-header">
+                <input type="text" name="pesquisar" id="buscar-header" placeholder="Buscar">
+                <button class="buscar" type="submit">Buscar</button>
+            </form>
+        </header>
+        <section>
+            <form class="pesquisa-section" id="pesquisa-section">
+                <h2>Encontre o que você precisar!</h2>
+                <input type="text" name="pesquisar" id="buscar-section" placeholder="Buscar">
+                <button class="buscar" type="submit">Buscar</button>
+            </form>
+            <div id="cards">
 
-        </div>
-    </section>
-    <footer>
-        <p>Autor: Léo Costa</p>
-        <div class="contatos">
-            <a href="https://github.com/LeoCosta-dev" target="blank"><img src="assets/part+1+github-1320568339880199515.png" alt="acesso ao github"></a>
-            <a href="https://www.linkedin.com/in/leonardo-da-costa-bbb82b210/" target="blank"><img src="assets/49408.png" alt="acesso ao linkedin"></a>
-            <a href="https://api.whatsapp.com/send/?phone=5521965487710&text&app_absent=0" target="blank"><img src="assets/whatsapp_black_logo_icon_147050.png" alt="contato pelo whatsapp"></a>
-        </div>
-        <p>2021 © </p>
-    </footer>
+            </div>
+        </section>
+        <footer>
+            <p>Autor: Léo Costa</p>
+            <div class="contatos">
+                <a href="https://github.com/LeoCosta-dev" target="blank"><img
+                        src="assets/part+1+github-1320568339880199515.png" alt="acesso ao github"></a>
+                <a href="https://www.linkedin.com/in/leonardo-da-costa-bbb82b210/" target="blank"><img
+                        src="assets/49408.png" alt="acesso ao linkedin"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5521965487710&text&app_absent=0" target="blank"><img
+                        src="assets/whatsapp_black_logo_icon_147050.png" alt="contato pelo whatsapp"></a>
+            </div>
+            <p>2021 © </p>
+        </footer>
+    </div>
 </body>
 
 </html>
