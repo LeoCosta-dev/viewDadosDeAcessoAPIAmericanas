@@ -121,6 +121,7 @@ footer{
     justify-content: center;
     height: max-content;
     width: 100%;
+    padding: 20px;
     background-color: rgb(245, 4, 4);
     color: rgb(255, 255, 255);
     text-align: center;
