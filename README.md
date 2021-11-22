@@ -1,4 +1,4 @@
-# Site de consumo da api de dados de acesso do site das lojas Americanas.
+# Site de consumo da api de dados de acesso do site das Lojas Americanas.
 
 ## Descrição:
 <br>
